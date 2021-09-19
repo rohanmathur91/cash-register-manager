@@ -23,7 +23,7 @@ function calculateChange(amountToBeReturn) {
 checkButton.addEventListener('click', function validateBillAndCashAmount() {
 	errorMessage.style.display = 'none'; // hide the error message
 	if (billAmount.value > 0) {
-		if (cashGiven.value > billAmount.value) {
+		if (cashGiven.value >= billAmount.value) {
 			const amountToBeReturn = cashGiven.value - billAmount.value;
 			calculateChange(amountToBeReturn);
 		} else {

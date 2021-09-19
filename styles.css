@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root {
+	--primary: #818cf8;
+	--secondary: #e0e7ff;
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #818cf8;
+	background-color: var(--primary);
+	color: var(--secondary);
 }
 
 .container {
@@ -14,4 +20,42 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+}
+
+label {
+	font-size: 1.5rem;
+	margin: 1rem 0rem;
+}
+
+input {
+	padding: 1rem;
+	width: 100%;
+}
+
+button {
+	margin: 1rem 0rem;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	color: var(--primary);
+	font-weight: bold;
+	background-color: var(--secondary);
+	border: 1px solid white;
+	border-radius: 0.2rem;
+}
+
+th,
+tr,
+td {
+	border: 1px solid white;
+}
+table {
+	text-align: center;
+}
+
+table caption {
+	font-size: 1.5rem;
+}
+
+td {
+	width: 60px;
 }
