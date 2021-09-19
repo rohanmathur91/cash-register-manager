@@ -28,8 +28,8 @@ label {
 }
 
 input {
-	padding: 1rem;
-	width: 100%;
+	padding: 0.8rem;
+	width: 60%;
 }
 
 button {
@@ -43,11 +43,6 @@ button {
 	border-radius: 0.2rem;
 }
 
-th,
-tr,
-td {
-	border: 1px solid white;
-}
 table {
 	text-align: center;
 }
@@ -56,12 +51,19 @@ table caption {
 	font-size: 1.5rem;
 }
 
+th,
+tr,
+td {
+	border: 1px solid white;
+}
+
 td {
 	width: 60px;
+	height: 20px;
 }
 
 .footer {
-	margin-top: 1rem;
+	margin-top: 1.5rem;
 	background-color: var(--primary);
 	color: white;
 	text-align: center;
