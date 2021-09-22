@@ -22,7 +22,10 @@ checkButton.addEventListener('click', function validateBillAndCashAmount() {
 	errorMessage.style.display = 'none'; // hide the error message
 	let billValue = Number(billAmount.value);
 	let cashValue = Number(cashGiven.value);
-	if (billValue > 0) {
+
+	if (billValue === cashValue) {
+		showMessage('No change to be return 🙂');
+	} else if (billValue > 0) {
 		if (cashValue >= billValue) {
 			const amountToBeReturn = cashValue - billValue;
 			calculateChange(amountToBeReturn);
